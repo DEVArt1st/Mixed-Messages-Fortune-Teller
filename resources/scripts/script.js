@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// var favoriteNumber = document.getElementById("numberInputForm").elements.namedItem("numberInput").value;
-
-=======
->>>>>>> extra-features
 function oddOrEven(num){
     const odd = "odd";
     const even = "even";
@@ -33,39 +28,8 @@ function pickRandomFortuneNumber(num){
 
 function tellFortune(num){
     let randomNum = pickRandomFortuneNumber(num);
-<<<<<<< HEAD
-
-    switch(randomNum){
-        case 1:
-            console.log("You will got on a trip!");
-            break;
-        case 2:
-            console.log("You will be rich!");
-            break;
-        case 3:
-            console.log("You will get an A on a test!");
-            break;
-        case 4:
-            console.log("Good fortune will be yours.");
-            break;
-        case 5:
-            console.log("Do a good deed today.");
-            break;
-        case 6:
-            console.log("Someone will call you today.");
-            break;
-        case 7:
-            console.log("You will go to a party soon!");
-            break;
-        case 8:
-            console.log("Be careful on Tuesday.");
-            break;
-        default:
-            console.log("Please enter valid favorite number.");
-            break;
-    }
-=======
     let text = document.getElementById("paragraph");
+
     switch(randomNum){
         case 1:
             text.innerHTML = "You will got on a trip!";
@@ -108,5 +72,4 @@ function btnFucntion(){
     }
 
     tellFortune(numInput);
->>>>>>> extra-features
 }
