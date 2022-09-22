@@ -13,6 +13,7 @@ h1{
     font-size: 90px;
     color: #eeeeee;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 h2{
@@ -20,6 +21,7 @@ h2{
     margin-top: 5%;
     color: #eeeeee;
     text-decoration: underline;
+    transition: 0.5s;
 }
 
 p{
@@ -40,7 +42,7 @@ input{
     height: 22px;
     padding: 2% 1%;
     vertical-align: middle;
-    width: 15%;
+    width: 30%;
     transition: 0.5s;
 }
 
@@ -74,4 +76,84 @@ button:hover{
     border-color: #E94560;
     color: #eeeeee;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1334px) {
+    input{
+        width: 40%;
+        height: 50px;
+    }
+
+    h2{
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    h1{
+        font-size: 72px;
+    }
+
+    button{
+        width: 40%;
+        padding: 2% 1%;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    button{
+        width: 50%;
+        padding: 2.5% 1.5%;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    button{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    input{
+        width: 50%;
+        height: 65px;
+    }
+
+    h2{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    h1{
+        font-size: 55px;
+    }
+
+    input{
+        font-size: 62px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1{
+        margin-top: 10%;
+        font-size: 50px;
+    }
+
+    h2{
+        margin-top: 20%;
+        font-size: 32px;
+    }
+
+    button{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+
+    input{
+        font-size: 55px;
+    }
+
+    p{
+        margin-top: 12%;
+    }
 }
