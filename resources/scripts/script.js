@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // var favoriteNumber = document.getElementById("numberInputForm").elements.namedItem("numberInput").value;
 
+=======
+>>>>>>> extra-features
 function oddOrEven(num){
     const odd = "odd";
     const even = "even";
@@ -30,6 +33,7 @@ function pickRandomFortuneNumber(num){
 
 function tellFortune(num){
     let randomNum = pickRandomFortuneNumber(num);
+<<<<<<< HEAD
 
     switch(randomNum){
         case 1:
@@ -60,4 +64,49 @@ function tellFortune(num){
             console.log("Please enter valid favorite number.");
             break;
     }
+=======
+    let text = document.getElementById("paragraph");
+    switch(randomNum){
+        case 1:
+            text.innerHTML = "You will got on a trip!";
+            break;
+        case 2:
+            text.innerHTML = "You will be rich!";
+            break;
+        case 3:
+            text.innerHTML = "You will get an A on a test!";
+            break;
+        case 4:
+            text.innerHTML = "Good fortune will be yours.";
+            break;
+        case 5:
+            text.innerHTML = "Do a good deed today.";
+            break;
+        case 6:
+            text.innerHTML = "Someone will call you today.";
+            break;
+        case 7:
+            text.innerHTML = "You will go to a party soon!";
+            break;
+        case 8:
+            text.innerHTML = "Be careful on Tuesday.";
+            break;
+        default:
+            text.innerHTML = "Please enter valid favorite number.";
+            break;
+    }
+}
+
+function btnFucntion(){
+    let numInput = document.getElementById("numberInput").value;
+
+    if(numInput === ""){
+        numInput = document.getElementById("numberInput").value = "NaN";
+    }
+    else{
+        numInput = parseInt(document.getElementById("numberInput").value);
+    }
+
+    tellFortune(numInput);
+>>>>>>> extra-features
 }
